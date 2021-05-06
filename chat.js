@@ -7,7 +7,7 @@ window.onload = setInterval(
     if(h<10){
         h = "0"+ h;
     }
-    else if(m<10){
+    if(m<10){
         m = "0"+ m
     }else{
         headerDate.children[3].innerHTML = h + ":" + m;
@@ -48,7 +48,7 @@ but.onclick = function(){
     else if (h == "0" + h){
         h = h
     }
-    else if(m<10){
+    if(m<10){
         m = "0" + m
     }
     else if (m == "0" + m){
